@@ -5,10 +5,12 @@ int maxofThree(int a, int b, int c){
     if (a>b && a>c){
         max=a;
     }
-    if(b>a && b>c){
+    else if(b>a && b>c)
+    {
         max=b;
     }
-     if(c>a && c>b){
+    else
+     {
         max=c;
     }
     return max;
