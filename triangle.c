@@ -10,9 +10,9 @@ int main()
 	printf("The length of side3 of triangle:");
 	scanf("%d", &side3);
 	if ((side1+side2>side3) && (side2+side3>side1) && (side3+side1>side2)){
-		printf("it's form a valid triangle.");
+		printf("it's form a valid triangle.\n");
 	
-	if(side1==side2 && side3!=side1,side2 ){
+	if(side1==side2 && side3!=side1 && side3!=side2 ){
 		printf("It's isosceles triangle.");
 	}else if(side1==side2 && side2==side3 && side3==side1){
 		printf("it's Equilateral triangle.");
