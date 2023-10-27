@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int starstoprint = 3;
-    int spacestoprint = 1;
+    int spacestoprint = 3;
+    int starstoprint = 1;
     for(int lines=1; lines<=7; lines++){
         for(int spaces = spacestoprint; spaces>0; spaces--){
             printf(" ");
