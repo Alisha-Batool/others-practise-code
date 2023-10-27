@@ -7,10 +7,8 @@
       u = v;
       v = temp;
  }
-  
- }
-
- int main (void)
+}
+int main (void)
  {
  	int u,v;
  	printf("Enter the number:");
