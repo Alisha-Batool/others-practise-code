@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+int isPerfect(int number);
 int isPerfect(int number){
     int sum=0;
     for(int i=1; i<=number/2; i++){
@@ -11,15 +12,16 @@ int isPerfect(int number){
     }
     return 0;
 }
+
 int main()
 {
     int number;
     printf("Enter the number:");
     scanf("%d", &number);
     if((isPerfect(number))){
-        printf("%d is a perfect number.",number);
+       printf("%d is a perfect number.",number);
     }else{
         printf("%d is not a perfect number.",number);
     }
-    return 0;
+    return 0;	
 }
