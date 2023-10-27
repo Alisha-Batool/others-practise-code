@@ -12,7 +12,7 @@
  int main (void)
  {
  
-   calculateTriangularNumber (10);
+   calculateTriangularNumber (200);
    calculateTriangularNumber (20);
    calculateTriangularNumber (50);
    return 0;
