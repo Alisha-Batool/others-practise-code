@@ -20,7 +20,7 @@ int main()
 		GenDen = PrevDen + CurrDen;
         float fraction=  ((float)(GenNum) / GenDen);
 		printf("%.1f\n ", fraction);
-		sum = sum + fraction ;
+	    sum = sum + fraction ;
 		PrevNum = CurrNum;
 		PrevDen = CurrDen;
 		CurrNum = GenNum;
