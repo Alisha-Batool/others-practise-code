@@ -6,8 +6,9 @@ int main()
     scanf("%d", &x);
     for(int i=0; i<=x;i+=2)
     {
-        printf("the odd numbers are following: %d\n");
-        
+        printf("the odd numbers are following: %d\n",i);
+        int squares= i*i;
+        printf("square of odd numbers are %d\n",  squares);
     }
     return 0;
 }
