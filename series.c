@@ -26,6 +26,6 @@ int main()
 		CurrNum = GenNum;
 		CurrDen = GenDen;
 	}
-	printf("The sum of 20th term  is %f\n",sum);
+	printf("The sum of 20th term  is %.2f\n",sum);
 	return 0;
 }
