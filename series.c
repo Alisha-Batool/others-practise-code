@@ -10,15 +10,15 @@ int main()
 	CurrDen=2;
 	float sum= (float)(PrevNum) / PrevDen + (float)(CurrNum) / CurrDen;
 	
-	printf("%.f\n", (float)(PrevNum) / PrevDen);
-	printf("%.f\n", (float)(CurrNum) / CurrDen);
+	printf("%.1f\n", (float)(PrevNum) / PrevDen);
+	printf("%.1f\n", (float)(CurrNum) / CurrDen);
 	
 	for(int i=3; i<=20; i++){
 		int GenNum, GenDen;
 		GenNum = PrevNum + CurrNum;
 		GenDen = PrevDen + CurrDen;
-        float fraction=  (float)(GenNum) / GenDen;
-		printf("%.f\n ", fraction);
+        float fraction=  ((float)(GenNum) / GenDen);
+		printf("%.1f\n ", fraction);
 		sum = sum + fraction ;
 		PrevNum = CurrNum;
 		PrevDen = CurrDen;

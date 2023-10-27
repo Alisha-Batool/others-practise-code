@@ -4,9 +4,10 @@ int main()
 {
     char token;
     printf("enter the phone:");
-    scanf("%c", &token);
     
-     do{   
+    
+     do{
+        scanf("%c", &token); 
         if(token=='A' || token=='B' || token=='C')
         {
             printf("2");

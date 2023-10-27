@@ -8,7 +8,7 @@ int main()
             for(int z=0; z<=30; z++){
                 if ((3*x+2*y+z==50)&&(x+y+z==30))
                 {
-                    printf("%d gentlemen,%d ladies,%d children at the dinner.\n");
+                    printf("%d gentlemen,%d ladies,%d children at the dinner.\n",x,y,z);
                     break;
                 }
             }
