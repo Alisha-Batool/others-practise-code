@@ -4,7 +4,7 @@
 float area(float radius, float pi){
     float area=0;
     area= pi * radius *radius;
-    return 1;
+    
 }
 int main()
 {
@@ -12,10 +12,11 @@ int main()
     const float pi=3.14;
     printf("Enter the value of radius of a circle:");
     scanf("%f", &radius);
+    radius=area(radius,pi);
     if(area(radius,pi)){
-    printf("The value of area of a circle is:%f\n", area);
+    printf("The value of area of a circle is: %f\n", radius);
     }else{
         printf("error.");
     }
-    return;
+    return 0;
 }
