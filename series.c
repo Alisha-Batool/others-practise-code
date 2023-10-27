@@ -8,10 +8,11 @@ int main()
 	PrevDen=1;
 	CurrNum=3;
 	CurrDen=2;
-	float sum= (float)(PrevNum) / PrevDen + (float)(CurrNum) / CurrDen;
-	
 	printf("%.1f\n", (float)(PrevNum) / PrevDen);
 	printf("%.1f\n", (float)(CurrNum) / CurrDen);
+	
+	float sum= (float)(PrevNum) / PrevDen + (float)(CurrNum) / CurrDen;
+	
 	
 	for(int i=3; i<=20; i++){
 		int GenNum, GenDen;
