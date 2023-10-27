@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+#include<math.h>
 int isArmstrong(int number);
 int isArmstrong(int number) {
     int originalNumber, remainder, result = 0, n = 0;
