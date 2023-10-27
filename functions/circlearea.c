@@ -15,7 +15,7 @@ int main()
     float circleArea=area(radius,pi);
     // circle area must be greater than zero and not negative value.
     if(circleArea>0){
-    printf("The value of area of a circle is: %f\n", radius);
+    printf("The value of area of a circle is: %f\n", circleArea);
     }else{
         printf("error.The radius must be a positive number.\n");
         // this message for non positive values
