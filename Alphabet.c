@@ -1,5 +1,9 @@
 #include<stdio.h>
-int isAlphabet( char input){
+
+int main()
+{
+    //read in a sequence of character,one at a time
+    char input;
     int vowels=0;
     int consonants=0;
     do
@@ -14,16 +18,10 @@ int isAlphabet( char input){
             {
                 consonants++;
             }
+            return 1;
         }
     }while (input='\n');
-    return 0;
-}
-
-int main()
-{
-    //read in a sequence of character,one at a time
-    char input;
-    isAlphabet(input);
+    
     printf("Number of vowels= %d \n Number of consonants= %d\n" );
     
     return 0;
