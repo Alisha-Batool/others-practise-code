@@ -1,8 +1,10 @@
 
 void printCollatzconjecture(int n){
-    if (n<=0){
-        printf("Error. Number must be positive.");
-        return;
+    if (n==0){
+        printf("Error. Number cannot be zero.");
+    }else if(n<0){
+        n=n*(-1);
+        // n = n * (-1);
     }
     do{
         //transform n as per the conjecture
