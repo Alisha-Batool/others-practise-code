@@ -1,0 +1,2 @@
+
+void printCollatzconjecture(int n);
