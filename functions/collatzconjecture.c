@@ -5,6 +5,7 @@ void printCollatzconjecture(int n){
     }else if(n<0){
         n=n*(-1);
         // n = n * (-1);
+        return;
     }
     do{
         //transform n as per the conjecture
