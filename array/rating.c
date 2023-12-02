@@ -4,8 +4,17 @@ void demoratingsCounter()
 {
     // ask 20 people for the rating [1-10] for a specific show
     //  print the highest noted rating by the audience
-    int ratingCounter[11] = {0};
-    int totalViewers = 10;
+    int totalViewers;
+
+    printf(" Enter total number of viewers:");
+    scanf("%d", &totalViewers);
+    int ratingCounter[totalViewers];
+   // array initializer
+    for (int i = 0; i < totalViewers; i++)
+    {
+        ratingCounter[i] = 0;
+    }
+    
     for (int i = 1; i <= totalViewers; i++)
     {
         int rating;
@@ -14,15 +23,15 @@ void demoratingsCounter()
         ratingCounter[rating]++;
     }
     int max = 0, indexofmax = 0;
-    for (int i = 0; i < 11; i++)
+    for (int i = 0; i < totalViewers; i++)
     {
         if (ratingCounter[i] > max)
         {
             max = ratingCounter[i];
             indexofmax = i;
-        }    
+        }
     }
-    printf("According to %d people out of 10, the show is rated as %d", max, indexofmax);
+    printf("According to %d people out of %d, the show is rated as %d", max, totalViewers, indexofmax);
 }
 int main()
 {
