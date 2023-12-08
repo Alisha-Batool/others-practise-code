@@ -10,7 +10,7 @@ void matrixMultiply(int row1, int cols1, int row2, int cols2, int matrixA[row1][
         for (int j = 0; j < cols2; j++)
         {
             result[i][j] = 0;
-            for (int k = 0; i < cols1; i++)
+            for (int k = 0; k < cols1; k++)
             {
                 result += matrixA[i][k] * matrixB[k][j];
             }
@@ -31,9 +31,12 @@ int main()
     // user prompt the value
     printf("give the value of rows and cols for matrix A separated by comma:");
     scanf("%d %d", &row1, &cols1);
+    // populate the value of row1 in cols2
+    // populate the value of cols1 in row2 
     int row2 = cols1;
     int cols2 = row1;
     printf("The number of rows and columns for matrixB:%d,%d",row2,cols2);
+    // matrices who will multiplied to each other
     int matrixA[row1][cols1];
     int matrixB[row2][cols2];
 
