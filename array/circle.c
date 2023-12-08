@@ -1,28 +1,27 @@
 #include <stdio.h>
 #include <math.h>
-void printCicle(int r){
-    for (int i = -r; i <=r; i++)
+void printCicle(int r)
+{
+    for (int i = -r; i <= r; i++)
     {
-        for (int j = -r; i <=r; j++)
+        for (int j = -r; j <= r; j++)
         {
-            double distance= sqrt(i*i + j*j);
-            if (r - 0.5 <= distance && distance >= r + 0.5 )
+            double distance = sqrt(i * i + j * j);
+            if (r - 0.5 <= distance && distance <= r + 0.5)
             {
                 printf("# ");
             }
-            else if(distance <= r)
+            else if (distance <= r)
             {
-                 printf("* ");
+                printf("* ");
             }
             else
             {
                 printf(". ");
             }
-            printf("\n");
         }
-        
+        printf("\n");
     }
-    
 }
 int main()
 {
@@ -32,4 +31,3 @@ int main()
     printCicle(r);
     return 0;
 }
-   
