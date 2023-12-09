@@ -24,6 +24,7 @@ void matrixMultiply(int row1, int cols1, int row2, int cols2, int matrixA[row1][
     }
 }
 
+
 int main()
 {
     int row1;
@@ -36,7 +37,7 @@ int main()
     int row2 = cols1;
     int cols2 = row1;
     printf("The number of rows and columns for matrixB: %d , %d", row2, cols2);
-    // matrices who will multiplied to each other
+    // matrices who will multiply to each other
     int matrixA[row1][cols1];
     int matrixB[row2][cols2];
 
