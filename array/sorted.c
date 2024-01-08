@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 int main(){
-    int a[8]={3,14,15,18,22,35};
+    int a[7]={3,14,15,18,22,35};
     int n;
     printf("Enter the integer that is to be inserted:");
     scanf("%d", &n);
@@ -15,7 +15,8 @@ int main(){
     printf("The updated array is:");
     for (int j = 0; j < 7; j++)
     {
-        printf("%d," , a[i]);
+        printf("%d " , a[j]);
     }
     return 0;
 }
+#
