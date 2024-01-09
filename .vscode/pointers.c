@@ -3,14 +3,24 @@
 #include <string.h>
 int swap(int *a, int *b)
 {
-    int temp= *a;
+    int temp = *a;
     *a = *b;
     *b = temp;
-    return 0 ;
+    return 0;
 }
 void incr(int *c)
 {
     *c = *c + 1;
+}
+void strcopy(char *p1, char *p2)
+{
+    while (*p1 != '\0')
+    {
+        *p2 = *p1;
+        p1++;
+        p2++;
+    }
+    *p2 = '\0';
 }
 int main()
 {
@@ -18,8 +28,9 @@ int main()
     // char *str2= "xxxxx";
     // strcpy(str1,str2);
     // printf("%s\n", str1);
-    // char *str1= "Hello world!";
-    // char str2[16];
+     char *str1= "Hello world!";
+     char str2[16];
+     strcopy(str1,str2);
     // char *p1 = str1;
     // char *p2 = str2;
     // while (*p1 != '\0')
@@ -29,21 +40,22 @@ int main()
     //     p2++;
     // }
     // *p2 = '\0';
-    // printf("%s\n", str1);
-    // printf("%s\n", str2);
-    char *str1= "Hello";
-    char *str2= "world";
-    char str[16];
-    strcpy(str, str1);
-    strcat(str, " ");
-    strcat(str, str2);
-    printf("%s\n", str);
+     printf("%s\n", str1);
+     printf("%s\n", str2);
 
-    //int a = 4;
-    //int *pa = &a;
-    //float b = 3.1;
-   // float *pb = &b;
-    //printf("a = %d\n", a);
+    // char *str1 = "Hello";
+    // char *str2 = "world";
+    // char str[16];
+    // strcpy(str, str1);
+    // strcat(str, " ");
+    // strcat(str, str2);
+    // printf("%s\n", str);
+
+    // int a = 4;
+    // int *pa = &a;
+    // float b = 3.1;
+    // float *pb = &b;
+    // printf("a = %d\n", a);
     // printf("b = %f\n", b);
     // printf(" pa = %d\n", pa);
     // printf(" pb = %f\n", pb);
