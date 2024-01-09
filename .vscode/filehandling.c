@@ -29,6 +29,31 @@ void demoWritefilecharbychar()
 void demoReadfilelinebyline()
 {
     char buffer[100];
-    FILE *fp={"Data.txt", "r"};
+    FILE *fp=fopen ("Data.txt", "r");
+    if(fp==NULL)
+    {
+        puts("Error,file does not open");
+        return;
+    }
+    int numcharread=0;
+    do
+    {
+        fgets(buffer,99,fp);
+        numcharread= strlen(buffer);
+        printf("%s", buffer);
+        buffer[0]= '\0';
+    } while (numcharread != 0);
+    fclose(fp);
+}
+
+void demoReadfilecharbychar()
+{
+    FILE *fp= fopen("Data_copy.txt","r");
+    char c;
+    do
+    {
+        c= fgetc(fp);
+        printf("%c",c);
+    } while (c != EOF);
     
 }
