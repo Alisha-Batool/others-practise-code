@@ -22,8 +22,17 @@ void strcopy(char *p1, char *p2)
     }
     *p2 = '\0';
 }
+struct STD{
+    char name[15];
+    float gpa;
+};
 int main()
-{
+{   
+    struct STD std1= {"Alisha", 3.33};
+    struct STD *p= &std1;
+    printf("Name= %s\n", (*p).name);
+    printf("GPA= %.2f\n", (*p).gpa);
+    // *****************************************//
     // char str1[]= "abserds";
     // char *str2= "xxxxx";
     // strcpy(str1,str2);
@@ -44,23 +53,23 @@ int main()
     //  printf("%s\n", str1);
     //  printf("%s\n", str2);
     //*****************************//
-     char *str1= "Hello", *str2= "Hi", *str3= "Hello";
-     if (strcmp(str1,str2) == -1)
-     {
-        printf("str1 < str2\n");
-     }
-     else if(strcmp(str1,str2) == 1)
-     {
-        printf(" str1 > str2\n");
-     }
-     if (strcmp(str1,str3) == 0)
-     {
-        printf("They are identical!\n");
-     }
-     else
-     {
-        printf(" They are not identical!\n");
-     }
+    //  char *str1= "Hello", *str2= "Hi", *str3= "Hello";
+    //  if (strcmp(str1,str2) == -1)
+    //  {
+    //     printf("str1 < str2\n");
+    //  }
+    //  else if(strcmp(str1,str2) == 1)
+    //  {
+    //     printf(" str1 > str2\n");
+    //  }
+    //  if (strcmp(str1,str3) == 0)
+    //  {
+    //     printf("They are identical!\n");
+    //  }
+    //  else
+    //  {
+    //     printf(" They are not identical!\n");
+    //  }
      
      //********************************//
     // char *str1 = "Hello";
