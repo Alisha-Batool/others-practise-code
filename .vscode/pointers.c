@@ -28,9 +28,10 @@ int main()
     // char *str2= "xxxxx";
     // strcpy(str1,str2);
     // printf("%s\n", str1);
-     char *str1= "Hello world!";
-     char str2[16];
-     strcopy(str1,str2);
+    //************************************//
+    //  char *str1= "Hello world!";
+    //  char str2[16];
+    //  strcopy(str1,str2);
     // char *p1 = str1;
     // char *p2 = str2;
     // while (*p1 != '\0')
@@ -40,9 +41,28 @@ int main()
     //     p2++;
     // }
     // *p2 = '\0';
-     printf("%s\n", str1);
-     printf("%s\n", str2);
-
+    //  printf("%s\n", str1);
+    //  printf("%s\n", str2);
+    //*****************************//
+     char *str1= "Hello", *str2= "Hi", *str3= "Hello";
+     if (strcmp(str1,str2) == -1)
+     {
+        printf("str1 < str2\n");
+     }
+     else if(strcmp(str1,str2) == 1)
+     {
+        printf(" str1 > str2\n");
+     }
+     if (strcmp(str1,str3) == 0)
+     {
+        printf("They are identical!\n");
+     }
+     else
+     {
+        printf(" They are not identical!\n");
+     }
+     
+     //********************************//
     // char *str1 = "Hello";
     // char *str2 = "world";
     // char str[16];
@@ -50,7 +70,7 @@ int main()
     // strcat(str, " ");
     // strcat(str, str2);
     // printf("%s\n", str);
-
+    //*******************************//
     // int a = 4;
     // int *pa = &a;
     // float b = 3.1;
@@ -61,6 +81,7 @@ int main()
     // printf(" pb = %f\n", pb);
     // printf(" *pa = %ld\n", *pa);
     // printf(" *pb = %f\n", *pb);
+    //*************************************//
     // float a = 4.1;
     // float *p = &a;
     // printf(" p= %f\n", p);
